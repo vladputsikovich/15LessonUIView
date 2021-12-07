@@ -28,7 +28,7 @@ class ViewController: UIViewController {
                 }
                 if xPos % 2 != 0 && yPos % 2 != 0 {
                     newView = UIView(frame: CGRect(x: xPos * 40, y: yPos * 40 + 120, width: 40, height: 40))
-                    newView.backgroundColor = UIColor.black
+                    newView.backgroundColor = .black
                     newView.autoresizingMask = [.flexibleRightMargin, .flexibleLeftMargin, .flexibleTopMargin, .flexibleBottomMargin, .flexibleHeight, .flexibleWidth]
                     views.append(newView)
                 }
