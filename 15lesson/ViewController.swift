@@ -4,6 +4,8 @@
 //
 //  Created by Владислав Пуцыкович on 5.12.21.
 //
+// Сделать универсальнее
+// 
 
 import UIKit
 
@@ -14,13 +16,13 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        var newView: UIView = UIView()
+        var newView = UIView()
         
         (0...7).forEach { xPos in
             (0...7).forEach { yPos in
                 if xPos % 2 == 0 && yPos % 2 == 0 {
                     newView = UIView(frame: CGRect(x: xPos * 40, y: yPos * 40 + 120, width: 40, height: 40))
-                    newView.backgroundColor = UIColor.black
+                    newView.backgroundColor = .black
                     newView.autoresizingMask = [.flexibleRightMargin, .flexibleLeftMargin, .flexibleTopMargin, .flexibleBottomMargin, .flexibleHeight, .flexibleWidth]
                     views.append(newView)
                 }
